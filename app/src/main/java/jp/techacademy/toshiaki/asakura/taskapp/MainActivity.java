@@ -133,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
 
                     Log.d("asat", "EditTextが空です");
                     reloadListView();//再描画
-                }
+                }else
                 {
                     Log.d("asat", String.valueOf(mCheckCategory_Text));
                     RealmResults<Task> taskRealmResults = mRealm.where(Task.class)
